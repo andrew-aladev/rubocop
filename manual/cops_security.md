@@ -2,9 +2,9 @@
 
 ## Security/Eval
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.47 | 
 
 This cop checks for the use of `Kernel#eval` and `Binding#eval`.
 
@@ -17,17 +17,11 @@ eval(something)
 binding.eval(something)
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.47` | Float
-
 ## Security/JSONLoad
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  |  | 0.44
 
 This cop checks for the use of JSON class methods which have potential
 security issues.
@@ -55,9 +49,7 @@ JSON.parse("{}")
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionChanged | `0.44` | Float
 AutoCorrect | `false` | Boolean
-SafeAutoCorrect | `falseVersionA` | String
 
 ### References
 
@@ -65,9 +57,9 @@ SafeAutoCorrect | `falseVersionA` | String
 
 ## Security/MarshalLoad
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.47 | 
 
 This cop checks for the use of Marshal class methods which have
 potential security issues leading to remote code execution when
@@ -87,21 +79,15 @@ Marshal.dump("{}")
 Marshal.load(Marshal.dump({}))
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.47` | Float
-
 ### References
 
 * [http://ruby-doc.org/core-2.3.3/Marshal.html#module-Marshal-label-Security+considerations](http://ruby-doc.org/core-2.3.3/Marshal.html#module-Marshal-label-Security+considerations)
 
 ## Security/Open
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | No | No | 0.53 | 
 
 This cop checks for the use of `Kernel#open`.
 
@@ -123,17 +109,11 @@ IO.popen(something)
 URI.parse(something).open
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.53` | Float
-
 ## Security/YAMLLoad
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes (Unsafe) | 0.47 | 
 
 This cop checks for the use of YAML class methods which have
 potential security issues leading to remote code execution when
@@ -149,12 +129,6 @@ YAML.load("--- foo")
 YAML.safe_load("--- foo")
 YAML.dump("foo")
 ```
-
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.47` | Float
 
 ### References
 

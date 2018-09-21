@@ -2,9 +2,9 @@
 
 ## Naming/AccessorMethodName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop makes sure that accessor methods are named properly.
 
@@ -28,21 +28,15 @@ def attribute
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.5` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#accessor_mutator_method_names](https://github.com/rubocop-hq/ruby-style-guide#accessor_mutator_method_names)
 
 ## Naming/AsciiIdentifiers
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop checks for non-ascii characters in identifier names.
 
@@ -78,21 +72,15 @@ params[:عرض_gteq] # Arabic character (non-ascii)
 params[:width_gteq]
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.5` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#english-identifiers](https://github.com/rubocop-hq/ruby-style-guide#english-identifiers)
 
 ## Naming/BinaryOperatorParameterName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop makes sure that certain binary operator methods have their
 sole  parameter named `other`.
@@ -107,21 +95,15 @@ def +(amount); end
 def +(other); end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.5` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#other-arg](https://github.com/rubocop-hq/ruby-style-guide#other-arg)
 
 ## Naming/ClassAndModuleCamelCase
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cops checks for class and module names with
 an underscore in them.
@@ -142,21 +124,15 @@ module MyModule
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.5` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#camelcase-classes](https://github.com/rubocop-hq/ruby-style-guide#camelcase-classes)
 
 ## Naming/ConstantName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop checks whether constant names are written using
 SCREAMING_SNAKE_CASE.
@@ -176,21 +152,15 @@ Inch_In_Cm = 2.54
 INCH_IN_CM = 2.54
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.5` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#screaming-snake-case](https://github.com/rubocop-hq/ruby-style-guide#screaming-snake-case)
 
 ## Naming/FileName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop makes sure that Ruby source files have snake_case
 names. Ruby scripts (i.e. source files with a shebang in the
@@ -219,7 +189,6 @@ anything/using_snake_case.rake
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
 Exclude | `[]` | Array
 ExpectMatchingDefinition | `false` | Boolean
 Regex | `<none>` | 
@@ -232,9 +201,9 @@ AllowedAcronyms | `CLI`, `DSL`, `ACL`, `API`, `ASCII`, `CPU`, `CSS`, `DNS`, `EOF
 
 ## Naming/HeredocDelimiterCase
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop checks that your heredocs are using the configured case.
 By default it is configured to enforce uppercase heredocs.
@@ -272,7 +241,6 @@ sql
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
 EnforcedStyle | `uppercase` | `lowercase`, `uppercase`
 
 ### References
@@ -281,9 +249,9 @@ EnforcedStyle | `uppercase` | `lowercase`, `uppercase`
 
 ## Naming/HeredocDelimiterNaming
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop checks that your heredocs are using meaningful delimiters.
 By default it disallows `END` and `EO*`, and can be configured through
@@ -312,7 +280,6 @@ EOS
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
 Blacklist | `(?-mix:(^|\s)(EO[A-Z]{1}|END)(\s|$))` | Array
 
 ### References
@@ -321,9 +288,9 @@ Blacklist | `(?-mix:(^|\s)(EO[A-Z]{1}|END)(\s|$))` | Array
 
 ## Naming/MemoizedInstanceVariableName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.53 | 0.58
 
 This cop checks for memoized methods whose instance variable name
 does not match the method name.
@@ -420,15 +387,13 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.53` | Float
-VersionChanged | `0.58` | Float
 EnforcedStyleForLeadingUnderscores | `disallowed` | `disallowed`, `required`, `optional`
 
 ## Naming/MethodName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop makes sure that all methods use the configured style,
 snake_case or camelCase, for their names.
@@ -458,7 +423,6 @@ def fooBar; end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
 EnforcedStyle | `snake_case` | `snake_case`, `camelCase`
 
 ### References
@@ -467,9 +431,9 @@ EnforcedStyle | `snake_case` | `snake_case`, `camelCase`
 
 ## Naming/PredicateName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 0.51
 
 This cop makes sure that predicates are named properly.
 
@@ -497,8 +461,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
-VersionChanged | `0.51` | Float
 NamePrefix | `is_`, `has_`, `have_` | Array
 NamePrefixBlacklist | `is_`, `has_`, `have_` | Array
 NameWhitelist | `is_a?` | Array
@@ -511,9 +473,9 @@ Exclude | `spec/**/*` | Array
 
 ## Naming/UncommunicativeBlockParamName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.53 | 
 
 This cop checks block parameter names for how descriptive they
 are. It is highly configurable.
@@ -555,7 +517,6 @@ baz { |age, height, gender| do_stuff(age, height, gender) }
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.53` | Float
 MinNameLength | `1` | Integer
 AllowNamesEndingInNumbers | `true` | Boolean
 AllowedNames | `[]` | Array
@@ -563,9 +524,9 @@ ForbiddenNames | `[]` | Array
 
 ## Naming/UncommunicativeMethodParamName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.53 | 0.59
 
 This cop checks method parameter names for how descriptive they
 are. It is highly configurable.
@@ -615,8 +576,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.53` | Float
-VersionChanged | `0.59` | Float
 MinNameLength | `3` | Integer
 AllowNamesEndingInNumbers | `true` | Boolean
 AllowedNames | `io`, `id`, `to`, `by`, `on`, `in`, `at`, `ip`, `db` | Array
@@ -624,9 +583,9 @@ ForbiddenNames | `[]` | Array
 
 ## Naming/VariableName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop makes sure that all variables use the configured style,
 snake_case or camelCase, for their names.
@@ -656,7 +615,6 @@ fooBar = 1
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
 EnforcedStyle | `snake_case` | `snake_case`, `camelCase`
 
 ### References
@@ -665,9 +623,9 @@ EnforcedStyle | `snake_case` | `snake_case`, `camelCase`
 
 ## Naming/VariableNumber
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 This cop makes sure that all numbered variables use the
 configured style, snake_case, normalcase or non_integer,
@@ -717,5 +675,4 @@ variable_one = 1
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
 EnforcedStyle | `normalcase` | `snake_case`, `normalcase`, `non_integer`

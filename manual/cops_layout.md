@@ -2,9 +2,9 @@
 
 ## Layout/AccessModifierIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Modifiers should be indented as deep as method definitions, or as deep
 as the class/module keyword, depending on configuration.
@@ -46,7 +46,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `indent` | `outdent`, `indent`
 IndentationWidth | `<none>` | Integer
 
@@ -56,9 +55,9 @@ IndentationWidth | `<none>` | Integer
 
 ## Layout/AlignArray
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Here we check if the elements of a multi-line array literal are
 aligned.
@@ -81,21 +80,15 @@ a = ['run',
      'run']
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#align-multiline-arrays](https://github.com/rubocop-hq/ruby-style-guide#align-multiline-arrays)
 
 ## Layout/AlignHash
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  |  | 
 
 Check that the keys, separators, and values of a multi-line hash
 literal are aligned according to configuration. The configuration
@@ -292,9 +285,9 @@ EnforcedLastArgumentHashStyle | `always_inspect` | `always_inspect`, `always_ign
 
 ## Layout/AlignParameters
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Here we check if the parameters on a multi-line method call or
 definition are aligned.
@@ -332,7 +325,6 @@ foo :bar,
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `with_first_parameter` | `with_first_parameter`, `with_fixed_indentation`
 IndentationWidth | `<none>` | Integer
 
@@ -342,9 +334,9 @@ IndentationWidth | `<none>` | Integer
 
 ## Layout/BlockAlignment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.53 | 
 
 This cop checks whether the end keywords are aligned properly for do
 end blocks.
@@ -419,13 +411,12 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyleAlignWith | `either` | `either`, `start_of_block`, `start_of_line`
-VersionAdded | `0.53` | Float
 
 ## Layout/BlockEndNewline
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks whether the end statement of a do..end block
 is on its own line.
@@ -452,17 +443,11 @@ blah { |i|
 }
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/CaseIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks how the *when*s of a *case* expression
 are indented in relation to its *case* or *end* keyword.
@@ -540,7 +525,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `case` | `case`, `end`
 IndentOneStep | `false` | Boolean
 IndentationWidth | `<none>` | Integer
@@ -551,9 +535,9 @@ IndentationWidth | `<none>` | Integer
 
 ## Layout/ClassStructure
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 0.52 | 
 
 Checks if the code style follows the ExpectedOrder configuration:
 
@@ -664,7 +648,6 @@ Name | Default value | Configurable values
 --- | --- | ---
 Categories | `{"module_inclusion"=>["include", "prepend", "extend"]}` | 
 ExpectedOrder | `module_inclusion`, `constants`, `public_class_methods`, `initializer`, `public_methods`, `protected_methods`, `private_methods` | Array
-VersionAdded | `0.52` | Float
 
 ### References
 
@@ -672,9 +655,9 @@ VersionAdded | `0.52` | Float
 
 ## Layout/ClosingHeredocIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.57 | 
 
 Checks the indentation of here document closings.
 
@@ -720,17 +703,11 @@ foo arg,
     EOS
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.57` | Float
-
 ## Layout/ClosingParenthesisIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks the indentation of hanging closing parentheses in
 method calls, method definitions, and grouped expressions. A hanging
@@ -798,17 +775,11 @@ some_method(a,
 )
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/CommentIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks the indentation of comments.
 
@@ -842,17 +813,11 @@ if true
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/ConditionPosition
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.53 | 
 
 This cop checks for conditions that are not on the same line as
 if/while/until.
@@ -875,21 +840,15 @@ if some_condition
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.53` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#same-line-condition](https://github.com/rubocop-hq/ruby-style-guide#same-line-condition)
 
 ## Layout/DefEndAlignment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.53 | 
 
 This cop checks whether the end keywords of method definitions are
 aligned properly.
@@ -936,13 +895,12 @@ Name | Default value | Configurable values
 EnforcedStyleAlignWith | `start_of_line` | `start_of_line`, `def`
 AutoCorrect | `false` | Boolean
 Severity | `warning` | String
-VersionAdded | `0.53` | Float
 
 ## Layout/DotPosition
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks the . position in multi-line method calls.
 
@@ -975,7 +933,6 @@ something.
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `leading` | `leading`, `trailing`
 
 ### References
@@ -984,9 +941,9 @@ EnforcedStyle | `leading` | `leading`, `trailing`
 
 ## Layout/ElseAlignment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks the alignment of else keywords. Normally they should
 be aligned with an if/unless/while/until/begin/def keyword, but there
@@ -1018,17 +975,11 @@ else
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/EmptyComment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.53 | 
 
 This cop checks empty comment.
 
@@ -1104,13 +1055,12 @@ Name | Default value | Configurable values
 --- | --- | ---
 AllowBorderComment | `true` | Boolean
 AllowMarginComment | `true` | Boolean
-VersionAdded | `0.53` | Float
 
 ## Layout/EmptyLineAfterGuardClause
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.56 | 0.59
 
 This cop enforces empty line after guard clause
 
@@ -1147,18 +1097,11 @@ def foo
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.56` | Float
-VersionChanged | `0.59` | Float
-
 ## Layout/EmptyLineAfterMagicComment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for a newline after the final magic comment.
 
@@ -1181,21 +1124,15 @@ class Person
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#separate-magic-comments-from-code](https://github.com/rubocop-hq/ruby-style-guide#separate-magic-comments-from-code)
 
 ## Layout/EmptyLineBetweenDefs
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks whether method definitions are
 separated by one empty line.
@@ -1229,7 +1166,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 AllowAdjacentOneLineDefs | `false` | Boolean
 NumberOfEmptyLines | `1` | Integer
 
@@ -1239,9 +1175,9 @@ NumberOfEmptyLines | `1` | Integer
 
 ## Layout/EmptyLines
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks for two or more consecutive blank lines.
 
@@ -1260,21 +1196,15 @@ some_method
 some_method
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#two-or-more-empty-lines](https://github.com/rubocop-hq/ruby-style-guide#two-or-more-empty-lines)
 
 ## Layout/EmptyLinesAroundAccessModifier
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Access modifiers should be surrounded by blank lines.
 
@@ -1298,21 +1228,15 @@ class Foo
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-access-modifier](https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-access-modifier)
 
 ## Layout/EmptyLinesAroundArguments
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.52 | 
 
 This cops checks if empty lines exist around the arguments
 of a method invocation.
@@ -1352,17 +1276,11 @@ some_method(
 )
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.52` | Float
-
 ## Layout/EmptyLinesAroundBeginBody
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks if empty lines exist around the bodies of begin-end
 blocks.
@@ -1385,21 +1303,15 @@ begin
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies](https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies)
 
 ## Layout/EmptyLinesAroundBlockBody
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks if empty lines around the bodies of blocks match
 the configuration.
@@ -1431,7 +1343,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `no_empty_lines` | `empty_lines`, `no_empty_lines`
 
 ### References
@@ -1440,9 +1351,9 @@ EnforcedStyle | `no_empty_lines` | `empty_lines`, `no_empty_lines`
 
 ## Layout/EmptyLinesAroundClassBody
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 0.53
 
 This cops checks if empty lines around the bodies of classes match
 the configuration.
@@ -1525,8 +1436,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
-VersionChanged | `0.53` | Float
 EnforcedStyle | `no_empty_lines` | `empty_lines`, `empty_lines_except_namespace`, `empty_lines_special`, `no_empty_lines`, `beginning_only`, `ending_only`
 
 ### References
@@ -1535,9 +1444,9 @@ EnforcedStyle | `no_empty_lines` | `empty_lines`, `empty_lines_except_namespace`
 
 ## Layout/EmptyLinesAroundExceptionHandlingKeywords
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks if empty lines exist around the bodies of `begin`
 sections. This cop doesn't check empty lines at `begin` body
@@ -1597,21 +1506,15 @@ rescue
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies](https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies)
 
 ## Layout/EmptyLinesAroundMethodBody
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks if empty lines exist around the bodies of methods.
 
@@ -1633,21 +1536,15 @@ def bar
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies](https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies)
 
 ## Layout/EmptyLinesAroundModuleBody
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks if empty lines around the bodies of modules match
 the configuration.
@@ -1706,7 +1603,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `no_empty_lines` | `empty_lines`, `empty_lines_except_namespace`, `empty_lines_special`, `no_empty_lines`
 
 ### References
@@ -1715,9 +1611,9 @@ EnforcedStyle | `no_empty_lines` | `empty_lines`, `empty_lines_except_namespace`
 
 ## Layout/EndAlignment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.53 | 
 
 This cop checks whether the end keywords are aligned properly.
 
@@ -1797,16 +1693,15 @@ variable =
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.53` | Float
 EnforcedStyleAlignWith | `keyword` | `keyword`, `variable`, `start_of_line`
 AutoCorrect | `false` | Boolean
 Severity | `warning` | String
 
 ## Layout/EndOfLine
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.49 | 
 
 This cop checks for Windows-style line endings in the source code.
 
@@ -1855,7 +1750,6 @@ puts 'Hello' # Return character is CR+LF on all platfoms.
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `native` | `native`, `lf`, `crlf`
 
 ### References
@@ -1864,9 +1758,9 @@ EnforcedStyle | `native` | `native`, `lf`, `crlf`
 
 ## Layout/ExtraSpacing
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks for extra/unnecessary whitespace.
 
@@ -1889,15 +1783,14 @@ website  = "https://github.com/rubocop-hq/rubocop"
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 AllowForAlignment | `true` | Boolean
 ForceEqualSignAlignment | `false` | Boolean
 
 ## Layout/FirstArrayElementLineBreak
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 0.49 | 
 
 This cop checks for a line break before the first element in a
 multi-line array.
@@ -1915,17 +1808,11 @@ multi-line array.
   :b]
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/FirstHashElementLineBreak
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 0.49 | 
 
 This cop checks for a line break before the first element in a
 multi-line hash.
@@ -1943,17 +1830,11 @@ multi-line hash.
   b: 2 }
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/FirstMethodArgumentLineBreak
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 0.49 | 
 
 This cop checks for a line break before the first argument in a
 multi-line method call.
@@ -1975,17 +1856,11 @@ method foo, bar,
   baz
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/FirstMethodParameterLineBreak
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 0.49 | 
 
 This cop checks for a line break before the first parameter in a
 multi-line method parameter definition.
@@ -2013,17 +1888,11 @@ def method foo,
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/FirstParameterIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 0.56
 
 This cop checks the indentation of the first parameter in a method call.
 Parameters after the first one are checked by Layout/AlignParameters,
@@ -2174,16 +2043,14 @@ second_param
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
-VersionChanged | `0.56` | Float
 EnforcedStyle | `special_for_inner_method_call_in_parentheses` | `consistent`, `consistent_relative_to_receiver`, `special_for_inner_method_call`, `special_for_inner_method_call_in_parentheses`
 IndentationWidth | `<none>` | Integer
 
 ## Layout/IndentArray
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks the indentation of the first element in an array literal
 where the opening bracket and the first element are on separate lines.
@@ -2275,15 +2142,14 @@ and_now_for_something = [
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `special_inside_parentheses` | `special_inside_parentheses`, `consistent`, `align_brackets`
 IndentationWidth | `<none>` | Integer
 
 ## Layout/IndentAssignment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks the indentation of the first line of the
 right-hand-side of a multi-line assignment.
@@ -2311,14 +2177,13 @@ value =
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 IndentationWidth | `<none>` | Integer
 
 ## Layout/IndentHash
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks the indentation of the first key in a hash literal
 where the opening brace and the first key are on separate lines. The
@@ -2408,15 +2273,14 @@ and_now_for_something = {
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `special_inside_parentheses` | `special_inside_parentheses`, `consistent`, `align_braces`
 IndentationWidth | `<none>` | Integer
 
 ## Layout/IndentHeredoc
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks the indentation of the here document bodies. The bodies
 are indented one step.
@@ -2500,7 +2364,6 @@ RUBY
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `auto_detection` | `auto_detection`, `squiggly`, `active_support`, `powerpack`, `unindent`
 
 ### References
@@ -2509,9 +2372,9 @@ EnforcedStyle | `auto_detection` | `auto_detection`, `squiggly`, `active_support
 
 ## Layout/IndentationConsistency
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks for inconsistent indentation.
 
@@ -2639,7 +2502,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `normal` | `normal`, `rails`
 
 ### References
@@ -2648,9 +2510,9 @@ EnforcedStyle | `normal` | `normal`, `rails`
 
 ## Layout/IndentationWidth
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks for indentation that doesn't use the specified number
 of spaces.
@@ -2701,7 +2563,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 Width | `2` | Integer
 IgnoredPatterns | `[]` | Array
 
@@ -2711,9 +2572,9 @@ IgnoredPatterns | `[]` | Array
 
 ## Layout/InitialIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cops checks for indentation of the first non-blank non-comment
 line in a file.
@@ -2732,17 +2593,11 @@ class A
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/LeadingBlankLines
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.57 | 
 
 This cop checks for unnecessary leading blank lines at the beginning
 of a file.
@@ -2771,17 +2626,11 @@ end
 # a comment
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.57` | Float
-
 ## Layout/LeadingCommentSpace
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks whether comments have a leading space after the
 `#` denoting the start of the comment. The leading space is not
@@ -2799,21 +2648,15 @@ or rackup options.
 # Some comment
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#hash-space](https://github.com/rubocop-hq/ruby-style-guide#hash-space)
 
 ## Layout/MultilineArrayBraceLayout
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks that the closing brace in an array literal is either
 on the same line as the last array element, or a new line.
@@ -2914,14 +2757,13 @@ line as the last element of the array.
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineAssignmentLayout
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 0.49 | 
 
 This cop checks whether the multiline assignments have a newline
 after the assignment operator.
@@ -2963,7 +2805,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `new_line` | `same_line`, `new_line`
 
 ### References
@@ -2972,9 +2813,9 @@ EnforcedStyle | `new_line` | `same_line`, `new_line`
 
 ## Layout/MultilineBlockLayout
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks whether the multiline do end blocks have a newline
 after the start of the block. Additionally, it checks whether the block
@@ -3012,17 +2853,11 @@ blah { |i|
 }
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/MultilineHashBraceLayout
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks that the closing brace in a hash literal is either
 on the same line as the last hash element, or a new line.
@@ -3122,14 +2957,13 @@ line as the last element of the hash.
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineMethodCallBraceLayout
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks that the closing brace in a method call is either
 on the same line as the last method argument, or a new line.
@@ -3230,14 +3064,13 @@ foo(a,
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineMethodCallIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks the indentation of the method name part in method calls
 that span more than one line.
@@ -3296,15 +3129,14 @@ myvariable = Thing
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `aligned` | `aligned`, `indented`, `indented_relative_to_receiver`
 IndentationWidth | `<none>` | Integer
 
 ## Layout/MultilineMethodDefinitionBraceLayout
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks that the closing brace in a method definition is either
 on the same line as the last method parameter, or a new line.
@@ -3417,14 +3249,13 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineOperationIndentation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks the indentation of the right hand side operand in
 binary operations that span more than one line.
@@ -3466,15 +3297,14 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `aligned` | `aligned`, `indented`
 IndentationWidth | `<none>` | Integer
 
 ## Layout/RescueEnsureAlignment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks whether the rescue and ensure keywords are aligned
 properly.
@@ -3497,17 +3327,11 @@ rescue
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/SpaceAfterColon
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for colon (:) not followed by some kind of space.
 N.B. this cop does not handle spaces after a ternary operator, which are
@@ -3523,21 +3347,15 @@ def f(a:, b:2); {a:3}; end
 def f(a:, b: 2); {a: 3}; end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#spaces-operators](https://github.com/rubocop-hq/ruby-style-guide#spaces-operators)
 
 ## Layout/SpaceAfterComma
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for comma (,) not followed by some kind of space.
 
@@ -3553,21 +3371,15 @@ Checks for comma (,) not followed by some kind of space.
 { foo:bar, }
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#spaces-operators](https://github.com/rubocop-hq/ruby-style-guide#spaces-operators)
 
 ## Layout/SpaceAfterMethodName
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for space between a method name and a left parenthesis in defs.
 
@@ -3583,21 +3395,15 @@ def func(x) end
 def method=(y) end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#parens-no-spaces](https://github.com/rubocop-hq/ruby-style-guide#parens-no-spaces)
 
 ## Layout/SpaceAfterNot
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks for space after `!`.
 
@@ -3611,21 +3417,15 @@ This cop checks for space after `!`.
 !something
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#no-space-bang](https://github.com/rubocop-hq/ruby-style-guide#no-space-bang)
 
 ## Layout/SpaceAfterSemicolon
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for semicolon (;) not followed by some kind of space.
 
@@ -3639,21 +3439,15 @@ x = 1;y = 2
 x = 1; y = 2
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#spaces-operators](https://github.com/rubocop-hq/ruby-style-guide#spaces-operators)
 
 ## Layout/SpaceAroundBlockParameters
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks the spacing inside and after block parameters pipes.
 
@@ -3686,14 +3480,13 @@ Checks the spacing inside and after block parameters pipes.
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyleInsidePipes | `no_space` | `space`, `no_space`
 
 ## Layout/SpaceAroundEqualsInParameterDefault
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks that the equals signs in parameter default assignments
 have or don't have surrounding space depending on configuration.
@@ -3731,7 +3524,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`
 
 ### References
@@ -3740,9 +3532,9 @@ EnforcedStyle | `space` | `space`, `no_space`
 
 ## Layout/SpaceAroundKeyword
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks the spacing around the keywords.
 
@@ -3768,17 +3560,11 @@ end
 something = 123 if test
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/SpaceAroundOperators
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks that operators have space around them, except for **
 which should not have surrounding space.
@@ -3803,7 +3589,6 @@ a**b
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 AllowForAlignment | `true` | Boolean
 
 ### References
@@ -3812,9 +3597,9 @@ AllowForAlignment | `true` | Boolean
 
 ## Layout/SpaceBeforeBlockBraces
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 0.52.1
 
 Checks that block braces have or don't have a space before the opening
 brace depending on configuration.
@@ -3852,16 +3637,14 @@ foo.map{ |a|
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`
 EnforcedStyleForEmptyBraces | `space` | `space`, `no_space`
-VersionChanged | `0.52.1` | String
 
 ## Layout/SpaceBeforeComma
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for comma (,) preceded by space.
 
@@ -3879,17 +3662,11 @@ a(1, 2)
 each { |a, b| }
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/SpaceBeforeComment
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks for missing space between a token and a comment on the
 same line.
@@ -3904,17 +3681,11 @@ same line.
 1 + 1 # this operation does ...
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/SpaceBeforeFirstArg
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks that exactly one space is used between a method name and the
 first argument for method calls without parentheses.
@@ -3941,14 +3712,13 @@ something 'hello'
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 AllowForAlignment | `true` | Boolean
 
 ## Layout/SpaceBeforeSemicolon
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for semicolon (;) preceded by space.
 
@@ -3962,17 +3732,11 @@ x = 1 ; y = 2
 x = 1; y = 2
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/SpaceInLambdaLiteral
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks for spaces between `->` and opening parameter
 parenthesis (`(`) in lambda literals.
@@ -4002,14 +3766,13 @@ a = -> (x, y) { x + y }
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `require_no_space` | `require_no_space`, `require_space`
 
 ## Layout/SpaceInsideArrayLiteralBrackets
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.52 | 
 
 Checks that brackets used for array literals have or don't have
 surrounding space depending on configuration.
@@ -4088,13 +3851,12 @@ Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `no_space` | `space`, `no_space`, `compact`
 EnforcedStyleForEmptyBrackets | `no_space` | `space`, `no_space`
-VersionAdded | `0.52` | Float
 
 ## Layout/SpaceInsideArrayPercentLiteral
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for unnecessary additional spaces inside array percent literals
 (i.e. %i/%w).
@@ -4108,17 +3870,11 @@ Checks for unnecessary additional spaces inside array percent literals
 %i(foo bar baz)
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/SpaceInsideBlockBraces
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks that block braces have or don't have surrounding space inside
 them on configuration. For blocks taking parameters, it checks that the
@@ -4210,16 +3966,15 @@ some_array.each {   }
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`
 EnforcedStyleForEmptyBraces | `no_space` | `space`, `no_space`
 SpaceBeforeBlockParameters | `true` | Boolean
 
 ## Layout/SpaceInsideHashLiteralBraces
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks that braces used for hash literals have or don't have
 surrounding space depending on configuration.
@@ -4296,7 +4051,6 @@ foo = {     }
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`, `compact`
 EnforcedStyleForEmptyBraces | `no_space` | `space`, `no_space`
 
@@ -4306,9 +4060,9 @@ EnforcedStyleForEmptyBraces | `no_space` | `space`, `no_space`
 
 ## Layout/SpaceInsideParens
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 0.55
 
 Checks for spaces inside ordinary round parentheses.
 
@@ -4349,8 +4103,6 @@ y()
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
-VersionChanged | `0.55` | Float
 EnforcedStyle | `no_space` | `space`, `no_space`
 
 ### References
@@ -4359,9 +4111,9 @@ EnforcedStyle | `no_space` | `space`, `no_space`
 
 ## Layout/SpaceInsidePercentLiteralDelimiters
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for unnecessary additional spaces inside the delimiters of
 %i/%w/%x literals.
@@ -4379,17 +4131,11 @@ Checks for unnecessary additional spaces inside the delimiters of
 %x(  ls -l )
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Layout/SpaceInsideRangeLiteral
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 Checks for spaces inside range literals.
 
@@ -4409,21 +4155,15 @@ Checks for spaces inside range literals.
 'a'..'z'
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#no-space-inside-range-literals](https://github.com/rubocop-hq/ruby-style-guide#no-space-inside-range-literals)
 
 ## Layout/SpaceInsideReferenceBrackets
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.52 | 0.53
 
 Checks that reference brackets have or don't have
 surrounding space depending on configuration.
@@ -4489,16 +4229,14 @@ foo[ ]
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.52` | Float
-VersionChanged | `0.53` | Float
 EnforcedStyle | `no_space` | `space`, `no_space`
 EnforcedStyleForEmptyBrackets | `no_space` | `space`, `no_space`
 
 ## Layout/SpaceInsideStringInterpolation
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop checks for whitespace within string interpolations.
 
@@ -4527,7 +4265,6 @@ This cop checks for whitespace within string interpolations.
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `no_space` | `space`, `no_space`
 
 ### References
@@ -4536,9 +4273,9 @@ EnforcedStyle | `no_space` | `space`, `no_space`
 
 ## Layout/Tab
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 0.51
 
 This cop checks for tabs inside the source code.
 
@@ -4562,8 +4299,6 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
-VersionChanged | `0.51` | Float
 IndentationWidth | `<none>` | Integer
 
 ### References
@@ -4572,9 +4307,9 @@ IndentationWidth | `<none>` | Integer
 
 ## Layout/TrailingBlankLines
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 
 
 This cop looks for trailing blank lines and a final newline in the
 source code.
@@ -4621,7 +4356,6 @@ class Foo; end
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.49` | Float
 EnforcedStyle | `final_newline` | `final_newline`, `final_blank_line`
 
 ### References
@@ -4630,9 +4364,9 @@ EnforcedStyle | `final_newline` | `final_newline`, `final_blank_line`
 
 ## Layout/TrailingWhitespace
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.49 | 0.55
 
 This cop looks for trailing whitespace in the source code.
 
@@ -4652,8 +4386,6 @@ x = 0
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionChanged | `0.55` | Float
-VersionAdded | `0.49` | Float
 AllowInHeredoc | `false` | Boolean
 
 ### References

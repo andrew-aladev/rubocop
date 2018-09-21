@@ -2,9 +2,9 @@
 
 ## Performance/Caller
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.49 | 
 
 This cop identifies places where `caller[n]`
 can be replaced by `caller(n..n).first`.
@@ -25,17 +25,11 @@ caller_locations(2..2).first
 caller_locations(1..1).first
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.49` | Float
-
 ## Performance/CaseWhenSplat
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | Yes  | 0.34 | 0.59
 
 Reordering `when` conditions with a splat to the end
 of the `when` branches can improve performance.
@@ -96,13 +90,12 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 AutoCorrect | `false` | Boolean
-VersionChanged | `0.59` | Float
 
 ## Performance/Casecmp
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  |  | 
 
 This cop identifies places where a case-insensitive string comparison
 can better be implemented using `casecmp`.
@@ -128,9 +121,9 @@ str.casecmp('ABC').zero?
 
 ## Performance/ChainArrayAllocation
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | No | 0.59 | 
 
 This cop is used to identify usages of
 Each of these methods (`compact`, `flatten`, `map`) will generate a
@@ -153,21 +146,15 @@ array.map! { |x| x.downcase }
 array
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.59` | Float
-
 ### References
 
 * [https://twitter.com/schneems/status/1034123879978029057](https://twitter.com/schneems/status/1034123879978029057)
 
 ## Performance/CompareWithBlock
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  |  | 
 
 This cop identifies places where `sort { |a, b| a.foo <=> b.foo }`
 can be replaced by `sort_by(&:foo)`.
@@ -195,9 +182,9 @@ array.sort_by { |a| a[:foo] }
 
 ## Performance/Count
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.31 | 0.39
 
 This cop is used to identify usages of `count` on an `Enumerable` that
 follow calls to `select` or `reject`. Querying logic can instead be
@@ -242,13 +229,12 @@ Model.select(:value).count
 Name | Default value | Configurable values
 --- | --- | ---
 SafeMode | `true` | Boolean
-VersionChanged | `0.39` | Float
 
 ## Performance/Detect
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.3 | 0.39
 
 This cop is used to identify usages of
 `select.first`, `select.last`, `find_all.first`, and `find_all.last`
@@ -278,7 +264,6 @@ considered unsafe.
 Name | Default value | Configurable values
 --- | --- | ---
 SafeMode | `true` | Boolean
-VersionChanged | `0.39` | Float
 
 ### References
 
@@ -286,9 +271,9 @@ VersionChanged | `0.39` | Float
 
 ## Performance/DoubleStartEndWith
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 0.48
 
 This cop checks for double `#start_with?` or `#end_with?` calls
 separated by `||`. In some cases such calls can be replaced
@@ -312,15 +297,13 @@ str.end_with?(var1, var2)
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.36` | Float
-VersionChanged | `0.48` | Float
 IncludeActiveSupportAliases | `false` | Boolean
 
 ## Performance/EndWith
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes (Unsafe) | 0.36 | 0.44
 
 This cop identifies unnecessary use of a regex where `String#end_with?`
 would suffice.
@@ -341,10 +324,7 @@ would suffice.
 
 Name | Default value | Configurable values
 --- | --- | ---
-SafeAutoCorrect | `false` | Boolean
 AutoCorrect | `false` | Boolean
-VersionAdded | `0.36` | Float
-VersionChanged | `0.44` | Float
 
 ### References
 
@@ -352,9 +332,9 @@ VersionChanged | `0.44` | Float
 
 ## Performance/FixedSize
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.35 | 
 
 Do not compute the size of statically sized objects.
 
@@ -403,9 +383,9 @@ waldo.size
 
 ## Performance/FlatMap
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.3 | 
 
 This cop is used to identify usages of
 
@@ -434,9 +414,9 @@ EnabledForFlattenWithoutParams | `false` | Boolean
 
 ## Performance/InefficientHashSearch
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | No | Yes  | 0.56 | 
 
 This cop checks for inefficient searching of keys and values within
 hashes.
@@ -474,21 +454,15 @@ h = { a: 1, b: 2 }; h.values.include?(nil)
 h = { a: 1, b: 2 }; h.value?(nil)
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.56` | Float
-
 ### References
 
 * [https://github.com/JuanitoFatas/fast-ruby#hashkey-instead-of-hashkeysinclude-code](https://github.com/JuanitoFatas/fast-ruby#hashkey-instead-of-hashkeysinclude-code)
 
 ## Performance/LstripRstrip
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop identifies places where `lstrip.rstrip` can be replaced by
 `strip`.
@@ -504,17 +478,11 @@ This cop identifies places where `lstrip.rstrip` can be replaced by
 'abc'.strip
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.36` | Float
-
 ## Performance/RangeInclude
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop identifies uses of `Range#include?`, which iterates over each
 item in a `Range` to see if a specified item is there. In contrast,
@@ -537,21 +505,15 @@ is wanted.
 ('a'..'z').cover?('yellow') # => true
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.36` | Float
-
 ### References
 
 * [https://github.com/JuanitoFatas/fast-ruby#cover-vs-include-code](https://github.com/JuanitoFatas/fast-ruby#cover-vs-include-code)
 
 ## Performance/RedundantBlockCall
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop identifies the use of a `&block` parameter and `block.call`
 where `yield` would do just as well.
@@ -576,21 +538,15 @@ def another
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.36` | Float
-
 ### References
 
 * [https://github.com/JuanitoFatas/fast-ruby#proccall-and-block-arguments-vs-yieldcode](https://github.com/JuanitoFatas/fast-ruby#proccall-and-block-arguments-vs-yieldcode)
 
 ## Performance/RedundantMatch
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop identifies the use of `Regexp#match` or `String#match`, which
 returns `#<MatchData>`/`nil`. The return value of `=~` is an integral
@@ -610,17 +566,11 @@ method(str =~ /regex/)
 return value unless regex =~ 'str'
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.36` | Float
-
 ## Performance/RedundantMerge
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop identifies places where `Hash#merge!` can be replaced by
 `Hash#[]=`.
@@ -637,7 +587,6 @@ hash.merge!(a: 1, b: 2)
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.36` | Float
 MaxKeyValuePairs | `2` | Integer
 
 ### References
@@ -646,9 +595,9 @@ MaxKeyValuePairs | `2` | Integer
 
 ## Performance/RedundantSortBy
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop identifies places where `sort_by { ... }` can be replaced by
 `sort`.
@@ -666,17 +615,11 @@ end
 array.sort
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.36` | Float
-
 ## Performance/RegexpMatch
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.47 | 
 
 In Ruby 2.4, `String#match?`, `Regexp#match?` and `Symbol#match?`
 have been added. The methods are faster than `match`.
@@ -751,21 +694,15 @@ def foo
 end
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.47` | Float
-
 ### References
 
 * [https://github.com/JuanitoFatas/fast-ruby#regexp-vs-stringmatch-vs-string-vs-stringmatch-code-](https://github.com/JuanitoFatas/fast-ruby#regexp-vs-stringmatch-vs-string-vs-stringmatch-code-)
 
 ## Performance/ReverseEach
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.3 | 
 
 This cop is used to identify usages of `reverse.each` and
 change them to use `reverse_each` instead.
@@ -786,9 +723,9 @@ change them to use `reverse_each` instead.
 
 ## Performance/Sample
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.3 | 
 
 This cop is used to identify usages of `shuffle.first`, `shuffle.last`
 and `shuffle[]` and change them to use `sample` instead.
@@ -823,9 +760,9 @@ and `shuffle[]` and change them to use `sample` instead.
 
 ## Performance/Size
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.3 | 
 
 This cop is used to identify usages of `count` on an
 `Array` and `Hash` and change them to `size`.
@@ -858,9 +795,9 @@ have been assigned to an array or a hash.
 
 ## Performance/StartWith
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes (Unsafe) | 0.36 | 0.44
 
 This cop identifies unnecessary use of a regex where
 `String#start_with?` would suffice.
@@ -881,10 +818,7 @@ This cop identifies unnecessary use of a regex where
 
 Name | Default value | Configurable values
 --- | --- | ---
-SafeAutoCorrect | `false` | Boolean
 AutoCorrect | `false` | Boolean
-VersionAdded | `0.36` | Float
-VersionChanged | `0.44` | Float
 
 ### References
 
@@ -892,9 +826,9 @@ VersionChanged | `0.44` | Float
 
 ## Performance/StringReplacement
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.33 | 
 
 This cop identifies places where `gsub` can be replaced by
 `tr` or `delete`.
@@ -921,9 +855,9 @@ This cop identifies places where `gsub` can be replaced by
 
 ## Performance/TimesMap
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.36 | 0.5
 
 This cop checks for .times.map calls.
 In most cases such calls can be replaced
@@ -948,15 +882,13 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 AutoCorrect | `false` | Boolean
-VersionAdded | `0.36` | Float
-VersionChanged | `0.5` | Float
 SafeAutocorrect | `false` | Boolean
 
 ## Performance/UnfreezeString
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.5 | 
 
 In Ruby 2.3 or later, use unary plus operator to unfreeze a string
 literal instead of `String#dup` and `String.new`.
@@ -982,17 +914,11 @@ String.new('something')
 +''
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.5` | Float
-
 ## Performance/UnneededSort
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.55 | 
 
 This cop is used to identify instances of sorting and then
 taking only the first or last element. The same behavior can
@@ -1043,17 +969,11 @@ arr.sort_by(&:foo).slice(-1)
 arr.max_by(&:foo)
 ```
 
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.55` | Float
-
 ## Performance/UriDefaultParser
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.5 | 
 
 This cop identifies places where `URI::Parser.new`
 can be replaced by `URI::DEFAULT_PARSER`.
@@ -1067,9 +987,3 @@ URI::Parser.new
 # good
 URI::DEFAULT_PARSER
 ```
-
-### Configurable attributes
-
-Name | Default value | Configurable values
---- | --- | ---
-VersionAdded | `0.5` | Float

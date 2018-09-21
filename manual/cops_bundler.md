@@ -2,9 +2,9 @@
 
 ## Bundler/DuplicatedGem
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.46 | 
 
 A Gem's requirements should be listed only once in a Gemfile.
 
@@ -37,14 +37,13 @@ gem 'rubocop', groups: [:development, :test]
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.46` | Float
 Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
 
 ## Bundler/GemComment
 
-Enabled by default | Supports autocorrection
---- | ---
-Disabled | No
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Disabled | Yes | No | 0.59 | 
 
 Add a comment describing each gem in your Gemfile.
 
@@ -65,15 +64,14 @@ gem 'foo'
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.59` | Float
 Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
 Whitelist | `[]` | Array
 
 ## Bundler/InsecureProtocolSource
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.5 | 
 
 The symbol argument `:gemcutter`, `:rubygems` and `:rubyforge`
 are deprecated. So please change your source to URL string that
@@ -105,14 +103,13 @@ source 'http://rubygems.org'
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.5` | Float
 Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
 
 ## Bundler/OrderedGems
 
-Enabled by default | Supports autocorrection
---- | ---
-Enabled | Yes
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes  | 0.46 | 0.47
 
 Gems should be alphabetically sorted within groups.
 
@@ -143,7 +140,5 @@ gem 'rspec'
 
 Name | Default value | Configurable values
 --- | --- | ---
-VersionAdded | `0.46` | Float
-VersionChanged | `0.47` | Float
 TreatCommentsAsGroupSeparators | `true` | Boolean
 Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
