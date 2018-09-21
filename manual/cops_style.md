@@ -351,7 +351,7 @@ of comments...
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.35
+Enabled | Yes | Yes  | 0.3 | 0.35
 
 Check for uses of braces or do/end around single line or
 multi-line blocks.
@@ -1092,7 +1092,7 @@ IncludeTernaryExpressions | `true` | Boolean
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Disabled | Yes | Yes  |  | 
+Disabled | Yes | Yes  | 0.3 | 
 
 Check that a copyright notice was given in each source file.
 
@@ -2399,7 +2399,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.3
+Enabled | Yes | Yes  | 0.9 | 0.3
 
 Checks for if and unless statements that would fit on one line
 if written as a modifier if/unless. The maximum line length is
@@ -2459,7 +2459,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 
+Enabled | Yes | No | 0.9 | 
 
 Checks for uses of semicolon in if statements.
 
@@ -2729,7 +2729,7 @@ EnforcedStyle | `call` | `call`, `braces`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 
+Enabled | Yes | Yes  | 0.18 | 
 
 This cop checks for string literal concatenation at
 the end of a line.
@@ -3360,7 +3360,7 @@ Checks for uses of if/unless modifiers with multiple-lines bodies.
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.26
+Enabled | Yes | Yes  | 0.9 | 0.26
 
 Checks for uses of the `then` keyword in multi-line if statements.
 
@@ -4005,7 +4005,7 @@ Strict | `false` | Boolean
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | No | Yes  |  | 0.59
+Enabled | No | Yes  | 0.42 | 0.59
 
 This cop checks for usage of comparison operators (`==`,
 `>`, `<`) to test numbers as zero, positive, or negative.
@@ -4071,7 +4071,7 @@ Exclude | `spec/**/*` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.38
+Enabled | Yes | Yes  | 0.9 | 0.38
 
 TODO: Make configurable.
 Checks for uses of if/then/else/end on a single line.
@@ -5951,7 +5951,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop checks for trailing comma in argument lists.
 
@@ -6505,7 +6505,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.3
+Enabled | Yes | Yes  | 0.9 | 0.3
 
 Checks for while and until statements that would fit on one line
 if written as a modifier while/until. The maximum line length is

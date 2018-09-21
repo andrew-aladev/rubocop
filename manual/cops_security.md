@@ -21,7 +21,7 @@ binding.eval(something)
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.44
+Enabled | Yes | Yes (Unsafe) | 0.43 | 0.44
 
 This cop checks for the use of JSON class methods which have potential
 security issues.

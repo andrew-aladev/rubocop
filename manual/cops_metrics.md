@@ -43,7 +43,7 @@ ExcludedMethods | `refine` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.9 | 0.47
+Enabled | Yes | No | 0.25 | 0.47
 
 This cop checks for excessive nesting of conditional and looping
 constructs.
@@ -69,7 +69,7 @@ Max | `3` | Integer
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.14 | 
+Enabled | Yes | No | 0.25 | 
 
 This cop checks if the length a class exceeds some maximum value.
 Comment lines can optionally be ignored.
@@ -86,7 +86,7 @@ Max | `100` | Integer
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.15 | 
+Enabled | Yes | No | 0.25 | 
 
 This cop checks that the cyclomatic complexity of methods is not higher
 than the configured maximum. The cyclomatic complexity is the number of
@@ -109,7 +109,7 @@ Max | `6` | Integer
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 0.46
+Enabled | Yes | No | 0.25 | 0.46
 
 This cop checks the length of lines in the source code.
 The maximum length is configurable.
@@ -135,7 +135,7 @@ IgnoredPatterns | `[]` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.9 | 
+Enabled | Yes | No | 0.25 | 
 
 This cop checks if the length of a method exceeds some maximum value.
 Comment lines can optionally be ignored.
@@ -173,7 +173,7 @@ Max | `100` | Integer
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.9 | 
+Enabled | Yes | No | 0.25 | 
 
 This cop checks for methods with too many parameters.
 The maximum number of parameters is configurable.

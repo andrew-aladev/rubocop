@@ -88,7 +88,7 @@ a = ['run',
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 
+Enabled | Yes | Yes  | 0.49 | 
 
 Check that the keys, separators, and values of a multi-line hash
 literal are aligned according to configuration. The configuration

@@ -95,7 +95,7 @@ AutoCorrect | `false` | Boolean
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 
+Enabled | Yes | Yes  | 0.36 | 
 
 This cop identifies places where a case-insensitive string comparison
 can better be implemented using `casecmp`.
@@ -154,7 +154,7 @@ array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 
+Enabled | Yes | Yes  | 0.46 | 
 
 This cop identifies places where `sort { |a, b| a.foo <=> b.foo }`
 can be replaced by `sort_by(&:foo)`.

@@ -2054,7 +2054,7 @@ Environments | `development`, `test`, `production` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.41
+Enabled | Yes | Yes  | 0.9 | 0.41
 
 This cop checks for the use of old-style attribute validation macros.
 

@@ -280,7 +280,7 @@ File.exist?(some_path)
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 
+Enabled | Yes | No | 0.45 | 
 
 This cop checks that there are no repeated conditions
 used in case 'when' expressions.
@@ -915,7 +915,7 @@ EnforcedStyle | `runtime_error` | `runtime_error`, `standard_error`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 
+Enabled | Yes | No | 0.5 | 
 
 This cop checks for interpolation in a single quoted string.
 
@@ -1178,7 +1178,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 
+Enabled | Yes | No | 0.52 | 
 
 This cop checks for nested percent literals.
 
@@ -1199,7 +1199,7 @@ attributes = {
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 
+Enabled | Yes | No | 0.36 | 
 
 Don't omit the accumulator when calling `next` in a `reduce` block.
 
@@ -1269,7 +1269,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Disabled | Yes | No |  | 
+Disabled | Yes | No | 0.53 | 
 
 This cop warns the usage of unsafe number conversions. Unsafe
 number conversion can cause unexpected error if auto type conversion
