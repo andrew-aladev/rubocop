@@ -454,6 +454,7 @@ RSpec.describe RuboCop::ConfigLoader do
               default_config['Metrics/LineLength']['Description'],
               'StyleGuide' => '#80-character-limits',
               'Enabled' => true,
+              'VersionAdded' => default_config['Metrics/LineLength']['VersionAdded'],
               'VersionChanged' => default_config['Metrics/LineLength']['VersionChanged'],
               'Max' => 77,
               'AllowHeredoc' => true,
@@ -550,6 +551,7 @@ RSpec.describe RuboCop::ConfigLoader do
               default_config['Metrics/LineLength']['Description'],
               'StyleGuide' => '#80-character-limits',
               'Enabled' => true,
+              'VersionAdded' => default_config['Metrics/LineLength']['VersionAdded'],
               'VersionChanged' => default_config['Metrics/LineLength']['VersionChanged'],
               'Max' => 120,             # overridden in line_length.yml
               'AllowHeredoc' => false,  # overridden in rubocop.yml
