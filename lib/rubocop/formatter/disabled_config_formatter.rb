@@ -116,7 +116,7 @@ module RuboCop
 
       def cop_config_params(default_cfg, cfg)
         default_cfg.keys -
-          %w[Description StyleGuide Reference Enabled Exclude VersionAdded VersionChanged VersionRemoved] -
+          %w[Description StyleGuide Reference Enabled Exclude Safe SafeAutoCorrect VersionAdded VersionChanged VersionRemoved] -
           cfg.keys
       end
 

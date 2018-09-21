@@ -467,6 +467,7 @@ RSpec.describe RuboCop::ConfigLoader do
               default_config['Metrics/MethodLength']['Description'],
               'StyleGuide' => '#short-methods',
               'Enabled' => true,
+              'VersionAdded' => default_config['Metrics/MethodLength']['VersionAdded'],
               'CountComments' => false,
               'Max' => 5
             }
