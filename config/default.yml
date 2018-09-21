@@ -1406,6 +1406,7 @@ Lint/RescueException:
   Description: 'Avoid rescuing the Exception class.'
   StyleGuide: '#no-blind-rescues'
   Enabled: true
+  VersionChanged: 0.27.1
 
 Lint/RescueType:
   Description: 'Avoid rescuing from non constants that could result in a `TypeError`.'
@@ -1582,6 +1583,7 @@ Metrics/AbcSize:
                  branches, and conditions.
   Reference: 'http://c2.com/cgi/wiki?AbcMetric'
   Enabled: true
+  VersionAdded: 0.27
   # The ABC size is a calculated magnitude, so this number can be an Integer or
   # a Float.
   Max: 15
@@ -1667,6 +1669,7 @@ Metrics/PerceivedComplexity:
                  A complexity metric geared towards measuring complexity for a
                  human reader.
   Enabled: true
+  VersionAdded: 0.25
   Max: 7
 
 #################### Naming ##############################
@@ -2003,6 +2006,7 @@ Performance/InefficientHashSearch:
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#hashkey-instead-of-hashkeysinclude-code'
   Enabled: true
   VersionAdded: 0.56
+  Safe: false
 
 Performance/LstripRstrip:
   Description: 'Use `strip` instead of `lstrip.rstrip`.'
@@ -2552,6 +2556,7 @@ Security/YAMLLoad:
   Reference: 'https://ruby-doc.org/stdlib-2.3.3/libdoc/yaml/rdoc/YAML.html#module-YAML-label-Security'
   Enabled: true
   VersionAdded: 0.47
+  SafeAutoCorrect: false
 
 #################### Style ###############################
 
@@ -2578,6 +2583,7 @@ Style/AndOr:
   Description: 'Use &&/|| instead of and/or.'
   StyleGuide: '#no-and-or-or'
   Enabled: true
+  VersionChanged: 0.25
   # Whether `and` and `or` are banned only in conditionals (conditionals)
   # or completely (always).
   EnforcedStyle: always
@@ -2612,6 +2618,7 @@ Style/BarePercentLiterals:
   Description: 'Checks if usage of %() or %Q() matches configuration.'
   StyleGuide: '#percent-q-shorthand'
   Enabled: true
+  VersionAdded: 0.25
   EnforcedStyle: bare_percent
   SupportedStyles:
     - percent_q
@@ -2708,6 +2715,7 @@ Style/BlockDelimiters:
 Style/BracesAroundHashParameters:
   Description: 'Enforce braces style around hash parameters.'
   Enabled: true
+  VersionChanged: 0.28
   EnforcedStyle: no_braces
   SupportedStyles:
     # The `braces` style enforces braces around all method parameters that are
@@ -2784,6 +2792,8 @@ Style/CollectionMethods:
   Description: 'Preferred collection methods.'
   StyleGuide: '#map-find-select-reduce-size'
   Enabled: false
+  VersionChanged: 0.27
+  Safe: false
   # Mapping from undesired method to desired_method
   # e.g. to use `detect` over `find`:
   #
@@ -2956,6 +2966,7 @@ Style/EmptyCaseCondition:
 Style/EmptyElse:
   Description: 'Avoid empty else-clauses.'
   Enabled: true
+  VersionAdded: 0.28
   VersionChanged: 0.32
   EnforcedStyle: both
   # empty - warn only on empty `else`
@@ -3155,6 +3166,7 @@ Style/InfiniteLoop:
   Description: 'Use Kernel#loop for infinite loops.'
   StyleGuide: '#infinite-loop'
   Enabled: true
+  VersionAdded: 0.26
 
 Style/InlineComment:
   Description: 'Avoid trailing inline comments.'
@@ -3165,6 +3177,7 @@ Style/InverseMethods:
                  Use the inverse method instead of `!.method`
                  if an inverse method is defined.
   Enabled: true
+  Safe: false
   VersionAdded: 0.48
   # `InverseMethods` are methods that can be inverted by a not (`not` or `!`)
   # The relationship of inverse methods only needs to be defined in one direction.
@@ -3339,6 +3352,7 @@ Style/MultilineIfThen:
   Description: 'Do not use then for multi-line if/unless.'
   StyleGuide: '#no-then'
   Enabled: true
+  VersionChanged: 0.26
 
 Style/MultilineMemoization:
   Description: 'Wrap multiline memoizations in a `begin` and `end` block.'
@@ -3501,6 +3515,7 @@ Style/NumericPredicate:
                  Checks for the use of predicate- or comparison methods for
                  numeric comparisons.
   StyleGuide: '#predicate-methods'
+  Safe: false
   # This will change to a new method call which isn't guaranteed to be on the
   # object. Switching these methods has to be done with knowledge of the types
   # of the variables which rubocop doesn't have.
@@ -3591,6 +3606,7 @@ Style/PercentLiteralDelimiters:
 Style/PercentQLiterals:
   Description: 'Checks if uses of %Q/%q match the configured preference.'
   Enabled: true
+  VersionAdded: 0.25
   EnforcedStyle: lower_case_q
   SupportedStyles:
     - lower_case_q # Use `%q` when possible, `%Q` when necessary
@@ -3790,6 +3806,7 @@ Style/SpecialGlobalVars:
   StyleGuide: '#no-cryptic-perlisms'
   Enabled: true
   VersionChanged: 0.36
+  SafeAutoCorrect: false
   EnforcedStyle: use_english_names
   SupportedStyles:
     - use_perl_names
@@ -3835,6 +3852,7 @@ Style/StringLiteralsInInterpolation:
                  Checks if uses of quotes inside expressions in interpolated
                  strings match the configured preference.
   Enabled: true
+  VersionAdded: 0.27
   EnforcedStyle: single_quotes
   SupportedStyles:
     - single_quotes
@@ -3879,6 +3897,7 @@ Style/SymbolLiteral:
 Style/SymbolProc:
   Description: 'Use symbols as procs instead of blocks when possible.'
   Enabled: true
+  VersionAdded: 0.26
   VersionChanged: 0.40
   # A list of method names to be ignored by the check.
   # The names should be fairly unique, otherwise you'll end up ignoring lots of code.
@@ -4107,5 +4126,6 @@ Style/YodaCondition:
 Style/ZeroLengthPredicate:
   Description: 'Use #empty? when testing for objects of length 0.'
   Enabled: true
+  Safe: false
   VersionAdded: 0.37
   VersionChanged: 0.39
