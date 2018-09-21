@@ -68,7 +68,7 @@ EnforcedStyle | `group` | `inline`, `group`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.5 | 0.36
+Enabled | Yes | Yes  | 0.9 | 0.36
 
 This cop enforces the use of either `#alias` or `#alias_method`
 depending on configuration.
@@ -111,7 +111,7 @@ EnforcedStyle | `prefer_alias` | `prefer_alias`, `prefer_alias_method`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.25
+Enabled | Yes | Yes  | 0.9 | 0.25
 
 This cop checks for uses of `and` and `or`, and suggests using `&&` and
 `||` instead. It can be configured to check only in conditions, or in
@@ -194,7 +194,7 @@ array literal or the second is a string literal.
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.6.1 | 0.52
+Enabled | Yes | No | 0.9 | 0.52
 
 This cop checks for non-ascii (non-English) characters
 in comments. You could set an array of allowed non-ascii chars in
@@ -325,7 +325,7 @@ This cop checks for BEGIN blocks.
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 0.23
+Enabled | Yes | Yes  | 0.9 | 0.23
 
 This cop looks for uses of block comments (=begin...=end).
 
@@ -638,7 +638,7 @@ EnforcedStyle | `is_a?` | `is_a?`, `kind_of?`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 0.2
+Enabled | Yes | Yes  | 0.9 | 0.2
 
 This cop checks for uses of the class/module name instead of
 self, when defining class/module methods.
@@ -709,7 +709,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Disabled | No | Yes  |  | 0.27
+Disabled | No | Yes  | 0.9 | 0.27
 
 This cop enforces the use of consistent method names
 from the Enumerable module.
@@ -732,7 +732,7 @@ PreferredMethods | `{"collect"=>"map", "collect!"=>"map!", "inject"=>"reduce", "
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 
+Enabled | Yes | Yes  | 0.9 | 
 
 This cop checks for methods invoked via the :: operator instead
 of the . operator (like FileUtils::rmdir instead of FileUtils.rmdir).
@@ -1618,7 +1618,7 @@ redundant.
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.8 | 0.12
+Enabled | Yes | Yes  | 0.9 | 0.12
 
 This cop checks for the use of a method, the result of which
 would be a literal, like an empty array, hash or string.
@@ -1706,7 +1706,7 @@ EnforcedStyle | `compact` | `compact`, `expanded`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.5
+Enabled | Yes | Yes  | 0.9 | 0.5
 
 This cop checks ensures source files have no utf-8 encoding comments.
 
@@ -2215,7 +2215,7 @@ MinBodyLength | `1` | Integer
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.43
+Enabled | Yes | Yes  | 0.9 | 0.43
 
 This cop checks hash literal syntax.
 
@@ -2621,7 +2621,7 @@ Whitelist | `::` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.8.1 | 0.4
+Enabled | Yes | Yes  | 0.9 | 0.4
 
 This cop (by default) checks for uses of the lambda literal syntax for
 single line lambdas, and the method call syntax for multiline lambdas.
@@ -3457,7 +3457,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 
+Enabled | Yes | No | 0.9 | 
 
 This cop checks for multi-line ternary op expressions.
 
@@ -3708,7 +3708,7 @@ Whitelist | `be`, `be_a`, `be_an`, `be_between`, `be_falsey`, `be_kind_of`, `be_
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 
+Enabled | Yes | No | 0.9 | 
 
 This cop checks for nested ternary op expressions.
 
@@ -3890,7 +3890,7 @@ IncludeSemanticChanges | `false` | Boolean
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 0.2
+Enabled | Yes | Yes  | 0.9 | 0.2
 
 This cop checks for uses of the keyword `not` instead of `!`.
 
@@ -3966,7 +3966,7 @@ EnforcedOctalStyle | `zero_with_o` | `zero_with_o`, `zero_only`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.48
+Enabled | Yes | Yes  | 0.9 | 0.48
 
 This cop checks for big numeric literals without _ between groups
 of digits in them.
@@ -4230,7 +4230,7 @@ c = 3
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.56
+Enabled | Yes | Yes  | 0.9 | 0.56
 
 This cop checks for the presence of superfluous parentheses around the
 condition of if/unless/while/until.
@@ -4442,7 +4442,7 @@ EnforcedStyle | `short` | `short`, `verbose`
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.8.1 | 0.18
+Enabled | Yes | Yes  | 0.9 | 0.18
 
 This cops checks for uses of Proc.new where Kernel#proc
 would be more appropriate.
@@ -4921,7 +4921,7 @@ AllowInnerSlashes | `false` | Boolean
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.6 | 0.34
+Enabled | Yes | Yes  | 0.9 | 0.34
 
 This cop checks for uses of rescue in its modifier form.
 
@@ -5173,7 +5173,7 @@ x += 1
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.5 | 0.19
+Enabled | Yes | Yes  | 0.9 | 0.19
 
 This cop checks for multiple expressions placed on the same line.
 It also checks for lines terminated with a semicolon.
@@ -5399,7 +5399,7 @@ Methods | `{"reduce"=>["acc", "elem"]}`, `{"inject"=>["acc", "elem"]}` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 0.19
+Enabled | Yes | Yes  | 0.9 | 0.19
 
 This cop checks for single-line method definitions that contain a body.
 It will accept single-line methods with no body.
@@ -5594,7 +5594,7 @@ symbols is preferred instead.
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.36
+Enabled | Yes | Yes  | 0.9 | 0.36
 
 Checks if uses of quotes match the configured preference.
 
@@ -5728,7 +5728,7 @@ Person = Struct.new(:first_name, :last_name)
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 0.49
+Enabled | Yes | Yes  | 0.9 | 0.49
 
 This cop can check for array literals made up of symbols that are not
 using the %i() syntax.
@@ -6210,7 +6210,7 @@ AllowNamedUnderscoreVariables | `true` | Boolean
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 0.38
+Enabled | Yes | Yes  | 0.9 | 0.38
 
 This cop looks for trivial reader/writer methods, that could
 have been created with the attr_* family of functions automatically.
@@ -6258,7 +6258,7 @@ Whitelist | `to_ary`, `to_a`, `to_c`, `to_enum`, `to_h`, `to_hash`, `to_i`, `to_
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 
+Enabled | Yes | Yes  | 0.9 | 
 
 This cop looks for *unless* expressions with *else* clauses.
 
@@ -6414,7 +6414,7 @@ which can be replaced with the shorter method `unpack1`.
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.5 | 0.2
+Enabled | Yes | Yes  | 0.9 | 0.2
 
 This cop checks for variable interpolation (like "#@ivar").
 
@@ -6440,7 +6440,7 @@ This cop checks for variable interpolation (like "#@ivar").
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 
+Enabled | Yes | Yes  | 0.9 | 
 
 This cop checks for *when;* uses in *case* expressions.
 
@@ -6540,7 +6540,7 @@ x += 1 until x > 10
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.7 | 0.36
+Enabled | Yes | Yes  | 0.9 | 0.36
 
 This cop can check for array literals made up of word-like
 strings, that are not using the %w() syntax.

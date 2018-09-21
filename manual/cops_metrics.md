@@ -43,7 +43,7 @@ ExcludedMethods | `refine` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.8.2 | 0.47
+Enabled | Yes | No | 0.9 | 0.47
 
 This cop checks for excessive nesting of conditional and looping
 constructs.
@@ -135,7 +135,7 @@ IgnoredPatterns | `[]` | Array
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.6 | 
+Enabled | Yes | No | 0.9 | 
 
 This cop checks if the length of a method exceeds some maximum value.
 Comment lines can optionally be ignored.
@@ -173,7 +173,7 @@ Max | `100` | Integer
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No |  | 0.9
+Enabled | Yes | No | 0.9 | 
 
 This cop checks for methods with too many parameters.
 The maximum number of parameters is configurable.

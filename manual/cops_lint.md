@@ -602,7 +602,7 @@ END { do_something }
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.6 | 
+Enabled | Yes | No | 0.9 | 
 
 This cop checks for *return* from an *ensure* block.
 
@@ -746,7 +746,7 @@ format('A value: %s and another: %i', a_value, another)
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.6 | 
+Enabled | Yes | No | 0.9 | 
 
 This cop checks for *rescue* blocks with no body.
 
@@ -991,7 +991,7 @@ This cop checks for interpolated literals.
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.8 | 
+Enabled | Yes | No | 0.9 | 
 
 This cop checks for uses of *begin...end while/until something*.
 
@@ -1547,7 +1547,7 @@ end
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | No | 0.6 | 0.27.1
+Enabled | Yes | No | 0.9 | 0.27.1
 
 This cop checks for *rescue* blocks targeting the Exception class.
 
