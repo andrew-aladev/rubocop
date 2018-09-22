@@ -192,8 +192,8 @@ Gemspec/OrderedDependencies:
   Description: >-
                  Dependencies in the gemspec should be alphabetically sorted.
   Enabled: true
-  TreatCommentsAsGroupSeparators: true
   VersionAdded: 0.51
+  TreatCommentsAsGroupSeparators: true
   Include:
     - '**/*.gemspec'
 
@@ -334,6 +334,7 @@ Layout/AlignParameters:
 Layout/BlockAlignment:
   Description: 'Align block ends correctly.'
   Enabled: true
+  VersionAdded: 0.53
   # The value `start_of_block` means that the `end` should be aligned with line
   # where the `do` keyword appears.
   # The value `start_of_line` means it should be aligned with the whole
@@ -344,7 +345,6 @@ Layout/BlockAlignment:
     - either
     - start_of_block
     - start_of_line
-  VersionAdded: 0.53
 
 Layout/BlockEndNewline:
   Description: 'Put end statement of multiline block on its own line.'
@@ -370,6 +370,7 @@ Layout/ClassStructure:
   Description: 'Enforces a configured order of definitions within a class body.'
   StyleGuide: 'https://github.com/rubocop-hq/ruby-style-guide#consistent-classes'
   Enabled: false
+  VersionAdded: 0.52
   Categories:
     module_inclusion:
       - include
@@ -383,7 +384,6 @@ Layout/ClassStructure:
       - public_methods
       - protected_methods
       - private_methods
-  VersionAdded: 0.52
 
 Layout/ClosingHeredocIndentation:
   Description: 'Checks the indentation of here document closings.'
@@ -441,9 +441,9 @@ Layout/ElseAlignment:
 Layout/EmptyComment:
   Description: 'Checks empty comment.'
   Enabled: true
+  VersionAdded: 0.53
   AllowBorderComment: true
   AllowMarginComment: true
-  VersionAdded: 0.53
 
 Layout/EmptyLineAfterGuardClause:
   Description: 'Add empty line after guard clause.'
@@ -1002,6 +1002,7 @@ Layout/SpaceInLambdaLiteral:
 Layout/SpaceInsideArrayLiteralBrackets:
   Description: 'Checks the spacing inside array literal brackets.'
   Enabled: true
+  VersionAdded: 0.52
   EnforcedStyle: no_space
   SupportedStyles:
     - space
@@ -1013,7 +1014,6 @@ Layout/SpaceInsideArrayLiteralBrackets:
   SupportedStylesForEmptyBrackets:
     - space
     - no_space
-  VersionAdded: 0.52
 
 Layout/SpaceInsideArrayPercentLiteral:
   Description: 'No unnecessary additional spaces between elements in %i/%w literals.'
@@ -1128,8 +1128,8 @@ Layout/TrailingWhitespace:
   Description: 'Avoid trailing whitespace.'
   StyleGuide: '#no-trailing-whitespace'
   Enabled: true
-  VersionChanged: 0.55
   VersionAdded: 0.49
+  VersionChanged: 0.55
   AllowInHeredoc: false
 
 #################### Lint ##################################
@@ -1219,9 +1219,9 @@ Lint/ElseLayout:
 Lint/EmptyEnsure:
   Description: 'Checks for empty ensure block.'
   Enabled: true
-  AutoCorrect: false
   VersionAdded: 0.10
   VersionChanged: 0.48
+  AutoCorrect: false
 
 Lint/EmptyExpression:
   Description: 'Checks for empty expressions.'
@@ -1443,14 +1443,14 @@ Lint/ReturnInVoidContext:
 Lint/SafeNavigationChain:
   Description: 'Do not chain ordinary method call after safe navigation operator.'
   Enabled: true
+  VersionAdded: 0.47
+  VersionChanged: 0.56
   Whitelist:
     - present?
     - blank?
     - presence
     - try
     - try!
-  VersionAdded: 0.47
-  VersionChanged: 0.56
 
 Lint/SafeNavigationConsistency:
   Description: >-
@@ -1458,13 +1458,14 @@ Lint/SafeNavigationConsistency:
                  call in an `&&` or `||` condition that safe navigation is used
                  for all method calls on that same object.
   Enabled: true
+  VersionAdded: 0.55
   Whitelist:
     - present?
     - blank?
     - presence
     - try
     - try!
-  VersionAdded: 0.55
+
 
 Lint/ScriptPermission:
   Description: 'Grant script file execute permission.'
@@ -1475,8 +1476,9 @@ Lint/ScriptPermission:
 Lint/ShadowedArgument:
   Description: 'Avoid reassigning arguments before they were used.'
   Enabled: true
-  IgnoreImplicitReferences: false
   VersionAdded: 0.52
+  IgnoreImplicitReferences: false
+
 
 Lint/ShadowedException:
   Description: >-
@@ -1953,6 +1955,7 @@ Performance/CaseWhenSplat:
                  of the `when` branches can improve performance.
   Enabled: false
   AutoCorrect: false
+  SafeAutoCorrect: false
   VersionAdded: 0.34
   VersionChanged: 0.59
 
@@ -2213,9 +2216,9 @@ Rails/ApplicationRecord:
 Rails/AssertNot:
   Description: 'Use `assert_not` instead of `assert !`.'
   Enabled: true
+  VersionAdded: 0.56
   Include:
     - '**/test/**/*'
-  VersionAdded: 0.56
 
 Rails/Blank:
   Description: 'Enforces use of `blank?`.'
@@ -2231,22 +2234,22 @@ Rails/Blank:
 Rails/BulkChangeTable:
   Description: 'Check whether alter queries are combinable.'
   Enabled: true
+  VersionAdded: 0.57
   Database: null
   SupportedDatabases:
     - mysql
     - postgresql
   Include:
     - db/migrate/*.rb
-  VersionAdded: 0.57
 
 Rails/CreateTableWithTimestamps:
   Description: >-
                   Checks the migration for which timestamps are not included
                   when creating a new table.
   Enabled: true
+  VersionAdded: 0.52
   Include:
     - db/migrate/*.rb
-  VersionAdded: 0.52
 
 Rails/Date:
   Description: >-
@@ -2352,9 +2355,9 @@ Rails/HasManyOrHasOneDependent:
   Description: 'Define the dependent option to the has_many and has_one associations.'
   StyleGuide: 'https://github.com/rubocop-hq/rails-style-guide#has_many-has_one-dependent-option'
   Enabled: true
+  VersionAdded: 0.50
   Include:
     - app/models/**/*.rb
-  VersionAdded: 0.50
 
 Rails/HttpPositionalArguments:
   Description: 'Use keyword arguments instead of positional arguments in http method calls.'
@@ -2367,27 +2370,26 @@ Rails/HttpPositionalArguments:
 Rails/HttpStatus:
   Description: 'Enforces use of symbolic or numeric value to define HTTP status.'
   Enabled: true
-
+  VersionAdded: 0.54
   EnforcedStyle: symbolic
   SupportedStyles:
     - numeric
     - symbolic
-  VersionAdded: 0.54
 
 Rails/InverseOf:
   Description: 'Checks for associations where the inverse cannot be determined automatically.'
   Enabled: true
+  VersionAdded: 0.52
   Include:
     - app/models/**/*.rb
-  VersionAdded: 0.52
 
 Rails/LexicallyScopedActionFilter:
   Description: "Checks that methods specified in the filter's `only` or `except` options are explicitly defined in the controller."
   StyleGuide: 'https://github.com/rubocop-hq/rails-style-guide#lexically-scoped-action-filter'
   Enabled: true
+  VersionAdded: 0.52
   Include:
     - app/controllers/**/*.rb
-  VersionAdded: 0.52
 
 Rails/NotNullColumn:
   Description: 'Do not add a NOT NULL column without a default value'
@@ -2452,9 +2454,9 @@ Rails/RedundantReceiverInWithOptions:
 Rails/RefuteMethods:
   Description: 'Use `assert_not` methods instead of `refute` methods.'
   Enabled: true
+  VersionAdded: 0.56
   Include:
     - '**/test/**/*'
-  VersionAdded: 0.56
 
 Rails/RelativeDateConstant:
   Description: 'Do not assign relative date to constants.'
@@ -2980,9 +2982,9 @@ Style/DateTime:
   Description: 'Use Date or Time over DateTime.'
   StyleGuide: '#date--time'
   Enabled: true
-  AllowCoercion: false
   VersionAdded: 0.51
   VersionChanged: 0.59
+  AllowCoercion: false
 
 Style/DefWithParentheses:
   Description: 'Use def with parentheses when there are arguments.'
@@ -3261,6 +3263,7 @@ Style/InfiniteLoop:
   StyleGuide: '#infinite-loop'
   Enabled: true
   VersionAdded: 0.26
+  SafeAutoCorrect: false
 
 Style/InlineComment:
   Description: 'Avoid trailing inline comments.'
@@ -3297,11 +3300,11 @@ Style/InverseMethods:
 Style/IpAddresses:
   Description: "Don't include literal IP addresses in code."
   Enabled: false
+  VersionAdded: 0.58
   # Allow strings to be whitelisted
   Whitelist:
     - "::"
     # :: is a valid IPv6 address, but could potentially be legitimately in code
-  VersionAdded: 0.58
 
 Style/Lambda:
   Description: 'Use the new lambda literal syntax for single-line blocks.'
@@ -3461,12 +3464,12 @@ Style/MultilineIfThen:
 Style/MultilineMemoization:
   Description: 'Wrap multiline memoizations in a `begin` and `end` block.'
   Enabled: true
+  VersionAdded: 0.44
+  VersionChanged: 0.48
   EnforcedStyle: keyword
   SupportedStyles:
     - keyword
     - braces
-  VersionAdded: 0.44
-  VersionChanged: 0.48
 
 Style/MultilineMethodSignature:
   Description: 'Avoid multi-line method signatures.'
@@ -3847,13 +3850,13 @@ Style/RescueModifier:
 Style/RescueStandardError:
   Description: 'Avoid rescuing without specifying an error class.'
   Enabled: true
+  VersionAdded: 0.52
   EnforcedStyle: explicit
   # implicit: Do not include the error class, `rescue`
   # explicit: Require an error class `rescue StandardError`
   SupportedStyles:
     - implicit
     - explicit
-  VersionAdded: 0.52
 
 Style/ReturnNil:
   Description: 'Use return instead of return nil.'
