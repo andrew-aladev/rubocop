@@ -1176,7 +1176,7 @@ AllowCoercion | `false` | Boolean
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  |  | 0.12
+Enabled | Yes | Yes  | 0.9 | 0.12
 
 This cop checks for parentheses in the definition of a method,
 that does not take any arguments. Both instance and
@@ -2502,7 +2502,7 @@ raise ArgumentError, 'Error message here'
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Enabled | Yes | Yes  | 0.26 | 
+Enabled | Yes | Yes (Unsafe) | 0.26 | 
 
 Use `Kernel#loop` for infinite loops.
 

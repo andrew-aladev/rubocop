@@ -2990,6 +2990,7 @@ Style/DefWithParentheses:
   Description: 'Use def with parentheses when there are arguments.'
   StyleGuide: '#method-parens'
   Enabled: true
+  VersionAdded: 0.9
   VersionChanged: 0.12
 
 Style/Dir:
@@ -4080,8 +4081,8 @@ Style/TrailingBodyOnModule:
 Style/TrailingCommaInArguments:
   Description: 'Checks for trailing comma in argument lists.'
   StyleGuide: '#no-trailing-params-comma'
-  VersionAdded: 0.36
   Enabled: true
+  VersionAdded: 0.36
   # If `comma`, the cop requires a comma after the last argument, but only for
   # parenthesized method calls where each argument is on its own line.
   # If `consistent_comma`, the cop requires a comma after the last argument,

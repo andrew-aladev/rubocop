@@ -29,7 +29,7 @@ caller_locations(1..1).first
 
 Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
 --- | --- | --- | --- | ---
-Disabled | Yes | Yes  | 0.34 | 0.59
+Disabled | Yes | Yes (Unsafe) | 0.34 | 0.59
 
 Reordering `when` conditions with a splat to the end
 of the `when` branches can improve performance.
